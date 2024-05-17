@@ -16,7 +16,7 @@ jobs:
       matrix:
         # build and publish in parallel: linux/386, linux/amd64, windows/386, windows/amd64, darwin/amd64, darwin/arm64
         goos: [ freebsd ]
-        goarch: [ amd64, arm, arm64 ]
+        goarch: [ amd64 ]
         exclude:
           - goos: darwin
             goarch: arm
